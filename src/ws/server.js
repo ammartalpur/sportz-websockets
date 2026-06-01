@@ -18,7 +18,7 @@ function unsubscribe(matchId, socket) {
   const subscribers = matchSubscribers.get(matchId) 
   if (!subscribers) return;
 
-  
+  subscribers.delete(socket);
 
   if (subscribers.size === 0) { 
     matchSubscribers.delete(matchId)
