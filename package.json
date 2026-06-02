@@ -8,7 +8,9 @@
     "start": "node src/index.js",
     "db:generate": "drizzle-kit generate",
     "db:migrate": "drizzle-kit migrate",
-    "ws": "wscat -c ws://localhost:8000/ws"
+    "ws": "wscat -c ws://localhost:8000/ws",
+    "test:ws": "node ws-test.js",
+    "test:suite": "node test-suite.js"
   },
   "keywords": [],
   "author": "Ammar Talpur",
@@ -17,6 +19,7 @@
   "dependencies": {
     "@arcjet/inspect": "^1.4.0",
     "@arcjet/node": "^1.4.0",
+    "axios": "^1.7.0",
     "dotenv": "^17.3.1",
     "drizzle-orm": "^0.45.1",
     "express": "^5.2.1",
